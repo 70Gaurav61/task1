@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>problem 1.1</title>
+  <style>
+    .mainblock{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+
+
+        width: 100%;
+        align-items: center;
+
+    }
+    .child {
+        background-color: rgb(27, 3, 89);
+        
+        margin: 5%;
+        position: relative;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+    }
+    body {
+        
+
+      font-family: Arial, sans-serif;
+      border-radius: 20px;
+      margin: 0;
+      border-radius: 20px;
+      
+      padding: 0;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      
+      background-color: rgb(27, 3, 89);
+
+      color: #fff;
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1 {
+        color: violet;
+      margin-top: 0;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: violet;
+      color: white;
+      border-radius: 20px;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+    .contact-info {
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+      color: white;
+    }
+    .contact-info i {
+      margin-right: 10px;
+    }
+    h5{
+        color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="mainblock">
+  <div class="child">
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>JUST SAY HELLO!</h1>
+    <h5>JUST LET US KNOW MOR ABOUT YOU!</h5>
+
+    <form action="#" method="post">
+      <em>
+      <input type="text" id="firstname" name="firtname" required value="FIRST NAME">
+      <input type="text" id="lastname" name="lastname" required value="LAST NAME"><br>
+      </em>
+      <em>
+      <input type="email" id="mail" name="mail" required value="MAIL">
+      <input type="number" id="number" name="number" required value="CONTACT">
+      </em>
+      <br>
+      <br>
+      
+
+      <textarea id="contact" name="contact" rows="4" value="MESSAGE" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <div class="contact-info">
+      <h2 style="color: violet;">CONTACT INFORMATION</h2>
+      <p><i class="fas fa-map-marker-alt"></i>CSED MNNIT ALLAHABAD</p>
+      <p><i class="fas fa-phone"></i>PRAYAGRAJ - 211004</p>
+      <p><i class="fas fa-envelope"></i>CALL US: +91-4794685713</p>
+      <h2 style="color: violet;">FOLLOW US</h2>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
